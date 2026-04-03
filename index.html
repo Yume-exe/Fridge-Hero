@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridge Hero</title>
+    <meta name="description" content="Generate magical recipes from your fridge ingredients.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <main class="container">
+        <div class="recipe-card glass-panel">
+            <header class="card-header">
+                <h1>Fridge Hero</h1>
+                <p>Discover magical recipes using what you have.</p>
+            </header>
+            
+            <section class="ingredients-form">
+                <div class="input-group">
+                    <label for="ingredient-1">Ingredient 1</label>
+                    <input type="text" id="ingredient-1" placeholder="e.g., Chicken">
+                </div>
+                <div class="input-group">
+                    <label for="ingredient-2">Ingredient 2</label>
+                    <input type="text" id="ingredient-2" placeholder="e.g., Rice">
+                </div>
+                <div class="input-group">
+                    <label for="ingredient-3">Ingredient 3</label>
+                    <input type="text" id="ingredient-3" placeholder="e.g., Broccoli">
+                </div>
+                
+                <button type="button" id="cook-magic-btn" class="magic-btn">
+                    <span>Cook Magic ✨</span>
+                </button>
+            </section>
+            
+            <div id="recipe-output" class="recipe-output"></div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
